@@ -12,13 +12,13 @@ function updateTable(data) {
     tr.innerHTML = `
       <td>${row.transaction_date}</td>
       <td>${row.ticker}</td>
-      <td>$${row.company}</td>
-      <td>$${row.action}</td>
-      <td>$${row.quantity}</td>
-      <td>${row.buy_price}%</td>
-      <td>${row.total_cost}%</td>
-      <td>${row.current_price}%</td>
-      <td>${row.market_value}%</td>
+      <td>${row.company}</td>
+      <td>${row.action}</td>
+      <td>${row.quantity}</td>
+      <td>$${row.buy_price}%</td>
+      <td>$${row.total_cost}%</td>
+      <td>$${row.current_price}%</td>
+      <td>$${row.market_value}%</td>
       <td>${row.gain_loss}%</td>
     `;
     tbody.appendChild(tr);
