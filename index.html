@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-section">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/line-chart.png" alt="logo">
+      <h1>Praful</h1>
+    </div>
+    <nav>
+      <a href="#transactions-log">Transaction Log</a>
+      <a href="#graphs">Graphs</a>
+      <a href="#buy-sell">Buy/Sell</a>
+      <select id="asset-type">
+        <option>Stock</option>
+        <!-- <option>Mutual Fund</option>
+        <option>Crypto</option> -->
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Stock Portfolio Overview</h2>
+<section id="transactions-log">
+    <h3>Transaction Log</h3>
+    <div class="table-container">
+   <table>
+      <thead>
+        <tr>
+          <th>transaction_date</th>
+          <th>ticker</th>
+          <th>company</th>
+          <th>action</th>
+          <th>quantity</th>
+          <th>buy_price</th>
+          <th>total_cost</th>
+          <th>current_price</th>
+          <th>market_value</th>
+          <th>gain/loss</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+    </div>
+
+</section>
+
+<section id="graphs">
+    <h3>Cost vs Market Value Comparison</h3>
+    <canvas id="barChart" height="700" width="1000"></canvas> 
+</section>
+
+
+<section id="buy-sell">
+<h3>Stock Trading Panel</h3>
+    <div class="actions">
+      <select id="stock-select">
+        <option>AAPL</option>
+        <option>GOOGL</option>
+        <option>TSLA</option>
+        <option>INFY</option>
+        <option>HDFC</option>
+        <option>MSFT</option>
+        <option>AMZN</option>
+        <option>RELI</option>
+      </select>
+      <input type="number" placeholder="Quantity" id="quantity-input">
+      <button class="buy">Buy</button>
+      <button class="sell">Sell</button>
+    </div>
+</section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
